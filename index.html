@@ -6,31 +6,20 @@
     <title>Rinterio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Matemasie&display=swap');
+      *{font-family: Manrope;}
+      </style>
 
-        *{
-          font-family: Manrope;
-        }
-        </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-
 </head>
-<body class="p-0 m-0  ">
+<body class="p-0 m-0">
     <header class="bg-gradient-to-b from-gray-300 to-gray-50S px-5 xl:px-[115px] xl:pb-[70px] xl:pt-[20px]">
         <nav class="flex xl:px-[135px] xl:pt-[56px] 
                          px-[20px]  pt-[35px] justify-between items-center">
@@ -39,7 +28,7 @@
 
                 <h1 class="xl:text-4xl text-3xl font-bold ">Rinterio</h3> 
             </div>
-            <div class=" gap-7 md:hidden hidden xl:flex">
+            <div class=" gap-7 md:hidden hidden xl:grid xl:grid-flow-row xl:grid-cols-3 xl:text-center  2xl:flex text-[18px]">
                 <a href="" class="hover:font-bold">Home</a>
                 <a href="" class="hover:font-bold">services</a>
                 <a href="" class="hover:font-bold">Portfolio</a>
@@ -50,25 +39,77 @@
               <img src="./assets/menu.png " alt="menu button" class="w-14 xl:hidden">
 
               <img src="./assets/search.png" class="w-13 h-12 hidden xl:flex">
-              <img src="./assets/shopping-cart (1).png" class="w-13 h-12 hidden xl:flex">
-              <button class="btn rounded-full bg-lime-200 font-extrabold text-[24px] hover:bg-lime-500"> Book Consult <img src="./assets/down-right (2).png" class="w-8 h-8" alt=""></button>
+              <img src="./assets/shopping-cart (1).png" class="w-13 h-12 hidden xl:flex ">
+              <button class="btn rounded-full bg-lime-200 font-extrabold text-[20px] hover:bg-lime-500 hidden xl:flex"> Book Consult <img src="./assets/down-right (2).png" class="w-8 h-8" alt=""></button>
             </div>
         </nav>
 
         <div class="pt-[32px] px-[20px]">
           <div>
             <img src="./assets/banner.png" alt="white modern house" class="pb-4 mx-auto">
-            <h1 class="font-extrabold text-[28px] text-center pb-4 xl:text-[64px]" >A barn house of this design has a striking a striking appearance</h1>
+            <h1 class="font-extrabold text-[28px] text-center pb-4 xl:text-[64px] font-mat" >A barn house of this design has a striking a striking appearance</h1>
 
             <p class="text-sm leading-6 pb-5 text-gray-600 text-center xl:text-[20px] xl:leading-[30px]">The modern house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
           </div>
           <div class="mx-auto flex justify-center">
             <button class="btn bg-lime-200 rounded-full px-[20%] border-lime-600 border-2 hover:bg-lime-600 font-blod text-[20px] xl:px-[70px] max-w-[400px]">
                View Details 
-               <img src="./assets/down-right (1).png" alt="green arrow" class="w-6 h-6"></button>
+               <img src="./assets/down-right (1).png" alt="green arrow" class="w-6 h-6 fo"></button>
          </div>
-
         </div>
     </header>
+
+    <section class="px-5 mt-8 bg-slate-100 lg pb-8">
+
+      <img src="./assets/Vector.png" alt="" class="hidden lg:flex lg:pt-[50px]">
+ 
+      <div class=" justify-center lg:justify-normal flex pt-[20px] lg:mb-[30px] items-center lg:items-center lg:ml-[130px]">
+        <img src="./assets/right-arrow.png" alt="arrow" class="h-6 w-6 hidden lg:flex">
+        <button class="flex bg-white lg:bg-slate-100 lg:py-0 lg:rounded-none lg:px-0 rounded-full  py-[10px] items-center text-[18px] font-bold px-[60px] mb-4 lg:mb-0 ">
+          <img src="./assets/right-arrow.png" alt="arrow" class="h-8 w-8 sm:hidden ">About us</button>
+      </div>
+
+      <div class="2xl:flex lg:w-[1500px] mx-auto">
+        <div class="lg:flex ">
+
+        
+
+          <div class="">
+            <h1 class="text-3xl font-[1000] text-center lg:text-left lg:mb-[32px] lg:font-[1000] lg:text-[60px] lg:leading-[60px]">We design thoughtful,<br class="hidden lg:flex"> liveable spaces</h1>
+            <p class="text-center pt-4 font-[600] text-gray-500 mb-5  lg:text-left lg:w-[600px]">Our architect team can build any type house wether its commercial or residential. Our designs seamlessly integrate classic elegance with contemporary innovation, creating homes that are both standout and are welcoming.</p>
+  
+            <div class="flex bg-white p-5 gap-x-5 rounded-2xl mb-5 lg:max-w-[750px] lg:mt-[30px]">
+              <div>
+                <img src="./assets/commercial.png" alt="commercial building" class="w-40 h-15">
+              </div>
+              <div>
+                <h1 class="font-bold text-2xl mb-4">Commercial</h1>
+                <p>Creating dynamic commercial spaces that blend functionality with cutting-edge design. Our projects are tailored to enhance business operations and customer experiences.</p>
+              </div>
+            </div>
+  
+  
+            <div class="flex bg-white p-5 gap-x-5 rounded-2xl lg:max-w-[750px] lg:mt-[30px]">
+              <div>
+                <img src="./assets/residential.png" alt="residential house" class="w-40 h-15">
+              </div>
+              <div>
+                <h1 class="font-bold text-2xl mb-4">residential</h1>
+                <p>Transforming houses into homes with innovative designs that blend comfort, style, and functionality. Our residential projects are tailored to meet preferences of each client.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+  
+  
+        </div>
+  
+        <div class="mt-5 mx-auto flex justify-center lg:justify-normal">
+          <img src="./assets/Rectangle.png" alt="house" class="lg:w-[600px]">
+        </div>
+      </div>
+
+    </section>
 </body>
 </html>
